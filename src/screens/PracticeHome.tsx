@@ -24,6 +24,7 @@ export function PracticeHome() {
   const profile = useAppStore((s) => s.profile);
   const markFirstRecordReassuranceShown = useAppStore((s) => s.markFirstRecordReassuranceShown);
   const haptic = useHaptic();
+  const headerTitle = profile?.name?.trim() ? 'Practices for ' + profile.name : 'Practices';
 
   const [minuteSheet, setMinuteSheet] = useState<string | null>(null);
   const [minuteMode, setMinuteMode] = useState<'log' | 'play'>('log');
@@ -120,7 +121,7 @@ export function PracticeHome() {
 
   return (
     <div className="h-full overflow-y-auto pb-8 bg-page">
-      <BackHeader dark title="Practices" hideBack rightAction={bellAction} />
+      <BackHeader dark title={headerTitle} hideBack rightAction={bellAction} />
 
       <div className="px-4">
         <section className="mt-5">
