@@ -1,6 +1,6 @@
 # Sadhana Tracker Preview
 
-PWA tested with real users. Features are explored in the product-os repo; this repo builds them only when a feature carries a learning goal that real use can answer.
+PWA tested with real users. Every feature explored in the product-os repo is built here first, as a quick build that tests it with real users and shows the team where the tracker is heading.
 
 ## Releasing
 - `main` deploys to production on Vercel, used by study participants.
@@ -11,6 +11,6 @@ PWA tested with real users. Features are explored in the product-os repo; this r
 
 ## Build briefs
 - A feature's exploration lives in `product-os/features/<name>/`. When it goes to Preview, Swami pastes or hands over the brief, and it's saved as `docs/briefs/<name>.md`.
-- Each brief names its learning goal. Build the smallest version that answers it.
+- Each brief names its learning goal. Build what the exploration decided, and make sure the build can answer that goal.
 - Copy is exact. Where a brief has no agreed string, leave the element blank rather than invent one.
 - Results from Preview go back into the feature's STATE.md in product-os.
