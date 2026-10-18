@@ -13,6 +13,7 @@ PWA tested with real users. Every feature explored in the product-os repo is bui
 - A feature's exploration lives in `product-os/features/<name>/`. When it goes to Preview, Swami pastes or hands over the brief, and it's saved as `docs/briefs/<name>.md`.
 - Every release is a study: its brief carries research questions, hypotheses with thresholds, and the events to log. The method is `product-os/processes/preview-studies/process.md`.
 - Build what the exploration decided. Add the brief's events before the feature, so a baseline week runs first.
-- Never announce a feature in the app during its study window, unless the brief says discovery isn't studied.
+- Introduce a bigger feature with the feature discovery bottom sheet, logging shown, dismissed and opened. Every release gets a short changelog note in the feedback section; a removal says what changed and why.
+- Every new feature logs a "shown" event. `docs/instrumentation.md` changes in the same commit as any event.
 - Copy is exact. Where a brief has no agreed string, leave the element blank rather than invent one.
 - Results from Preview go back into the feature's STATE.md in product-os.
