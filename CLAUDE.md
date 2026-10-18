@@ -1,6 +1,6 @@
 # Sadhana Tracker Preview
 
-PWA tested with real users. Swami explores and specs features for the Sadhguru App in the product-os repo; this repo adapts them to the PWA.
+PWA tested with real users. Features are explored in the product-os repo; this repo builds them only when a feature carries a learning goal that real use can answer.
 
 ## Releasing
 - `main` deploys to production on Vercel, used by study participants.
@@ -9,15 +9,8 @@ PWA tested with real users. Swami explores and specs features for the Sadhguru A
 - Commit as Swami Gana `297094440+swamigana-hub@users.noreply.github.com`. On the Vercel Hobby plan, only the project owner's commits deploy.
 - Supabase belongs to Augusto's account. Don't change the schema or edge functions without Swami's yes.
 
-## Feature context
-Read the file for a feature before building it. Each holds decisions, copy, logic, rejected options and open questions.
-
-| Feature | File | Status |
-|---|---|---|
-| Weekly progress strip | `docs/features/weekly-progress-strip.md` | Explored, not built |
-| Practice sessions | `docs/features/practice-sessions.md` | Explored, not built |
-| Overall progress heatmap | `docs/features/overall-progress-heatmap.md` | Explored, not built |
-
-The strip and the heatmap overlap: the strip's minutes bands are 12 linear bands of 20 minutes, dated 7 Oct; the heatmap's Scale A uses non-linear bands with the same 12 colours, dated 18 Oct. Ask Swami which applies before building either.
-
-Copy is exact. Where a file has no agreed string, leave the element blank rather than invent one.
+## Build briefs
+- A feature's exploration lives in `product-os/features/<name>/`. When it goes to Preview, Swami pastes or hands over the brief, and it's saved as `docs/briefs/<name>.md`.
+- Each brief names its learning goal. Build the smallest version that answers it.
+- Copy is exact. Where a brief has no agreed string, leave the element blank rather than invent one.
+- Results from Preview go back into the feature's STATE.md in product-os.
